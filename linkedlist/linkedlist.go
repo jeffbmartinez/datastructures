@@ -70,7 +70,7 @@ func (l *LinkedList) Insert(position uint, value int) {
 }
 
 func (l *LinkedList) Remove(position uint) *Node {
-	if position > l.Size() {
+	if position >= l.Size() {
 		return nil
 	}
 

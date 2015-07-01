@@ -153,6 +153,14 @@ func TestRemove2(t *testing.T) {
 	}
 }
 
+func TestRemove3(t *testing.T) {
+	ll := &LinkedList{}
+
+	if nodeNil := ll.Remove(0); nodeNil != nil {
+		t.FailNow()
+	}
+}
+
 func BenchmarkInsertAndRemoveMany(b *testing.B) {
 	const nodesToInsert = 10000
 
